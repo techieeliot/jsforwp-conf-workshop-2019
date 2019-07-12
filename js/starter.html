@@ -12,27 +12,22 @@
     ></div>
   </body>
   <script>
-      const container = document.querySelector(`#app`);
+    const theFirstVariable = `This is a string variable`;
+    const theSecondVariable = 500;
+    const theThirdVariable = true;
+    const firstName = `Eliot`;
+    const lastName = `Sanford`;
+    const myHeader = `Yo, it's a Heada`;
+    const mySubheader = `...and I'm a sub headin', Gee!`;
 
-      const buttonMarkup = 
+    const fullName = `${firstName} ${lastName}`;
 
-      
-      const button = document.querySelector(`#get-user-name`);
+    document.getElementById('app').innerHTML += 
+    `<h1>${myHeader}</h1>
+    <h2> ${mySubheader}</h2>
+    <h2>By ${fullName}</h2>`;
 
-      button.addEventlistener(`click`, getUserName);
 
-      function getUserName () {
-        
-        const header = document.querySelector(`#app h1`);
-
-        const userName = prompt(`Please enter your full name.`);
-
-        const message = `Hi ${userName}!`;
-
-        alert(message);
-
-        constainer.innerHTML = message;
-      }
 
 
 
